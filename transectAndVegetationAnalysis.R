@@ -40,6 +40,7 @@ vegPal3 <- c("#1E1719FF","#6CA167FF", "#145A76FF",  "#9F5630FF")
 wcPal <- c("#19798BFF", "#F3D567FF", "#EE9B43FF", "#E74B47FF", "#B80422FF", "#912534FF")
 
 # Directories -------------------------------------------------------------
+manDir <- "/Users/emmalathrop/Documents/NAU/SchuurLab/Manuscripts/Chapter3/"
 
 # Import transect data ----------------------------------------------------
 df2013 <- read.csv("datasets/df2013.csv")
@@ -228,7 +229,6 @@ b <- ggplot(data = dfBothYearsLong, aes(x=Distance,y=organicThickness, group_by 
 b 
 ggarrange(a, b, labels = c("A)", "B)"))
 #ggsave(paste0(manDir, "figures/suppVegTransect", Sys.Date(), ".png"), width = 35, height = 15, units = "cm", dpi = 500)
-
 
 # Transect data: change in thaw metric analysis --------------------------------------
 
